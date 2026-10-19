@@ -1,0 +1,42 @@
+{
+    "skill-system": {
+        "PreInvocation": [
+            {
+                "type": "command",
+                "command": "./hooks/agy-pre-invocation.sh",
+                "timeout": 15
+            }
+        ],
+        "PreToolUse": [
+            {
+                "matcher": "replace_file_content|write_to_file",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "./hooks/agy-pre-tool-use.sh",
+                        "timeout": 15
+                    }
+                ]
+            }
+        ],
+        "PostToolUse": [
+            {
+                "matcher": "replace_file_content|write_to_file",
+                "hooks": [
+                    {
+                        "type": "command",
+                        "command": "./hooks/agy-post-tool-use.sh",
+                        "timeout": 10
+                    }
+                ]
+            }
+        ],
+        "Stop": [
+            {
+                "type": "command",
+                "command": "./hooks/agy-stop.sh",
+                "timeout": 30
+            }
+        ]
+    }
+}
