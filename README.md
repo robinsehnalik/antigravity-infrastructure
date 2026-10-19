@@ -38,6 +38,8 @@ This repository serves as a **central template and reference library**. You can 
   - [Registering Triggers](#registering-triggers)
   - [Skill Validation Script](#skill-validation-script)
 - [Troubleshooting & FAQs](#troubleshooting--faqs)
+- [License](#license)
+
 
 ---
 
@@ -566,3 +568,10 @@ It displays suggestion counts, user conversions, and blocked edits per skill.
 ```bash
 cd .agents/hooks && npm install && npm rebuild better-sqlite3
 ```
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
