@@ -72,7 +72,7 @@ skills/
 │   ├── skills.json            # Explicit skill path declarations
 │   │
 │   ├── skills/                # Production-tested modular skills
-│   │   ├── web-design-guidelines/      # Vercel UI/UX, accessibility & performance
+│   │   ├── web-design-guidelines/      # by Vercel - UI/UX, accessibility & performance
 │   │   │   └── SKILL.md
 │   │   ├── frontend-dev-guidelines/   # React 18+, MUI v7, TanStack Query & Router
 │   │   │   ├── SKILL.md
